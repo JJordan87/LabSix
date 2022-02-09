@@ -1,0 +1,15 @@
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\LabSix.exe
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\LabSix.deps.json
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\LabSix.runtimeconfig.json
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\LabSix.dll
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\ref\LabSix.dll
+C:\Users\Jon\source\repos\LabSix\LabSix\bin\Debug\net6.0\LabSix.pdb
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.csproj.AssemblyReference.cache
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.AssemblyInfoInputs.cache
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.AssemblyInfo.cs
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.csproj.CoreCompileInputs.cache
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.dll
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\ref\LabSix.dll
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.pdb
+C:\Users\Jon\source\repos\LabSix\LabSix\obj\Debug\net6.0\LabSix.genruntimeconfig.cache
