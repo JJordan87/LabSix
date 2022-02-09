@@ -4,28 +4,29 @@ while (runProgram)
 {
 
     //Dictionary of available items and prices
-    Dictionary<string, double> menu = new Dictionary<string, double>()
+    Dictionary<string, decimal> menu = new Dictionary<string, decimal>()
     {
-        ["Bird of Paradise"] = 29.50,
-        ["Bamboo Palm"] = 27.50,
-        ["Chinese Evergreen"] = 49.50,
-        ["Dracaena"] = 19.50,
-        ["Foxtail Fern"] = 45.00,
-        ["Money Tree"] = 35.00,
-        ["Monstera Deliciosa"] = 29.50,
-        ["String of Pearls"] = 29.50,
+        ["Bird of Paradise"] = 29.50M,
+        ["Bamboo Palm"] = 27.50M,
+        ["Chinese Evergreen"] = 49.50M,
+        ["Dracaena"] = 19.50M,
+        ["Foxtail Fern"] = 45.00M,
+        ["Money Tree"] = 35.00M,
+        ["Monstera Deliciosa"] = 29.50M,
+        ["String of Pearls"] = 29.50M,
     };
-
-    //displaying the Dictionary
-    foreach (KeyValuePair<string, double> item in menu)
-    {
-        Console.WriteLine(String.Format("{0,-25} {1,25}", item.Key, item.Value));
-    }
-    Console.WriteLine();
 
     //Shopping List & Price List
     List<string> shoppingList = new List<string>();
-    List<double> shoppingListPrices = new List<double>();
+    List<decimal> shoppingListPrices = new List<decimal>();//do not need this if you call out from dictionary
+
+    //displaying the Dictionary
+    foreach (KeyValuePair<string, decimal> item in menu)
+    {
+        Console.WriteLine(String.Format("{0,-25} {1,25} {2,-25}", item.Key, "$", item.Value));
+    }
+    Console.WriteLine();
+
 
     while (runProgram)
     {
@@ -64,12 +65,14 @@ while (runProgram)
                 {
                     Console.WriteLine(String.Format("{0,-25} {1,25}", shoppingList[i], "$" + shoppingListPrices[i]));
                 }
-                double cartTotal = shoppingListPrices.Sum();
+                decimal cartTotal = shoppingListPrices.Sum();
                 Console.WriteLine(String.Format("{0,-25} {1,22} {2,-15}", "Your order total is", "$", cartTotal));
-                double mostExpensive = shoppingListPrices.Max();
-                double leastExpensive = shoppingListPrices.Min();
-                Console.WriteLine($"The least expensive item in your cart is\t${leastExpensive}");
-                Console.WriteLine($"The most expensive item in your cart is \t${mostExpensive}");
+                decimal avgPriceofCart = shoppingListPrices.Average();
+                decimal mostExpensive = shoppingListPrices.Max();
+                decimal leastExpensive = shoppingListPrices.Min();
+                Console.WriteLine($"The Average price per item in your order was: \t${avgPriceofCart}");
+                Console.WriteLine($"The least expensive item in your cart is:\t${leastExpensive}");
+                Console.WriteLine($"The most expensive item in your cart is: \t${mostExpensive}");
 
                 runProgram = false;
                 break;
